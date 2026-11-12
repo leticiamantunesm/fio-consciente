@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fale com o Fio Consciente: sugestões, cadastro de brechós e marcas sustentáveis, feedback acadêmico e privacidade LGPD." />
+  <title>Contato | Fio Consciente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Fio Consciente — página inicial">
+        <span class="logo__name">Fio Consciente</span>
+        <span class="logo__tag">Moda &amp; Circularidade</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-controls="menu-principal" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir ou fechar menu">
+        <span></span>
+      </label>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="impactos.html">Impactos</a></li>
+          <li><a href="circularidade.html">Moda Circular</a></li>
+          <li><a href="sobre.html">Sobre o Projeto</a></li>
+          <li><a href="contato.html" class="active" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="main-content">
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow">Conexão &amp; comunidade</p>
+        <h1>Vamos conversar sobre o futuro do vestir?</h1>
+        <p class="lead">
+          Sugestões de pauta, parcerias com brechós e marcas conscientes, dúvidas sobre o
+          projeto acadêmico ou feedback sobre o site — escreva para o coletivo Fio Consciente.
+        </p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="form-titulo">
+      <div class="container contact-layout">
+        <div>
+          <h2 id="form-titulo" class="sr-only">Formulário de contato</h2>
+
+          <form class="form-card" action="mailto:contato.fioconsciente@exemplo.unip.br" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input
+                class="form-control"
+                type="text"
+                id="nome"
+                name="nome"
+                autocomplete="name"
+                required="required"
+                placeholder="Seu nome e sobrenome"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required="required"
+                placeholder="voce@email.com"
+              />
+              <span class="hint">Usaremos este endereço apenas para responder ao seu contato.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <select class="form-control" id="assunto" name="assunto" required="required">
+                <option value="" disabled="disabled" selected="selected">Selecione uma opção</option>
+                <option value="sugestao-pauta">Sugestão de pauta</option>
+                <option value="cadastrar-brecho">Cadastrar brechó / marca sustentável</option>
+                <option value="projeto-academico">Projeto acadêmico</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="mensagem"
+                name="mensagem"
+                required="required"
+                placeholder="Conte sua ideia, parceria ou dúvida com o máximo de contexto possível."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="consentimento" style="display: flex; gap: 0.75rem; align-items: flex-start; font-weight: 500; color: var(--grafite);">
+                <input
+                  type="checkbox"
+                  id="consentimento"
+                  name="consentimento"
+                  required="required"
+                  style="margin-top: 0.35rem; accent-color: #3B533E;"
+                />
+                <span>
+                  Declaro que li a nota de privacidade e autorizo o tratamento dos dados informados
+                  exclusivamente para responder a este contato, conforme a LGPD.
+                </span>
+              </label>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+
+        <aside class="privacy-card" aria-labelledby="lgpd-titulo">
+          <span class="badge">Compromisso</span>
+          <h3 id="lgpd-titulo">Privacidade &amp; LGPD</h3>
+          <p>
+            Em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados), os dados
+            enviados por este formulário <strong>não são comercializados</strong> nem armazenados
+            indevidamente.
+          </p>
+          <ul>
+            <li>Finalidade específica: retorno de contato acadêmico ou de parceria.</li>
+            <li>Minimização: pedimos apenas o necessário para compreender sua mensagem.</li>
+            <li>Sem cookies de rastreamento publicitário neste projeto didático.</li>
+            <li>Você pode solicitar esclarecimentos sobre o tratamento dos seus dados.</li>
+          </ul>
+          <p style="margin-top: 1.25rem; font-size: 0.92rem;">
+            Parcerias de brechós e marcas sustentáveis ajudam a ampliar a rede de circularidade
+            apresentada em <a href="circularidade.html">Moda Circular</a>.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Fio Consciente</h3>
+          <p>
+            Atividades Práticas Supervisionadas (APS) – 1º Semestre de Ciência da Computação – UNIP.
+            Disciplina vinculada: Programação Web Responsiva (PWR).
+          </p>
+        </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="impactos.html">Impactos</a></li>
+            <li><a href="circularidade.html">Moda Circular</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fontes &amp; referências</h3>
+          <p>
+            UNEP · Textile Exchange (Materials Market Report 2026) · ABIT · OIT/ILO ·
+            PNRS (Lei 12.305/2010) · LGPD (Lei 13.709/2018).
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Fio Consciente · Projeto acadêmico UNIP. Todos os direitos reservados ao grupo.</p>
+        <p>Dados tratados sob princípios da LGPD. Resíduos e logística alinhados à PNRS.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
